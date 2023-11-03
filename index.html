@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web Homero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #78bbcb;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Patua One', serif;
+            font-size: 4rem;
+        }
+
+        .container {
+            margin: 0 auto;
+            display: grid;
+            height: 450px;
+            max-width: 800px;
+            grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+            grid-template-rows: 1fr .75fr 1fr .25fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "relojGusano tostadora1 jesus gusano3 tostadora2"
+                "tostadoraCampana boca jesus campana boca2"
+                "tostadoraCampana reloj jesus tostadora3 reloj2"
+                "gusano1 gusano2 jesus . .";
+        }
+
+        .relojGusano {
+            grid-area: relojGusano;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .tostadora1 {
+            grid-area: tostadora1;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .jesus {
+            grid-area: jesus;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tostadoraCampana {
+            grid-area: tostadoraCampana;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .boca {
+            grid-area: boca;
+            display: flex;
+        }
+
+        .reloj {
+            grid-area: reloj;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        .gusano1 {
+            grid-area: gusano1;
+        }
+
+        .gusano2 {
+            grid-area: gusano2;
+        }
+
+        .gusano3 {
+            grid-area: gusano3;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .tostadora2 {
+            grid-area: tostadora2;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .campana {
+            grid-area: campana;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .boca2 {
+            grid-area: boca2;
+            display: flex;
+        }
+
+        .tostadora3 {
+            grid-area: tostadora3;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        .reloj2 {
+            grid-area: reloj2;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .relojGusano_reloj {
+            align-self: center;
+        }
+
+        .relojGusano_gusano {
+            align-self: flex-start;
+        }
+
+        .tostadoraCampana_tostadora {
+            align-self: flex-start;
+            margin-top: auto;
+        }
+
+        .tostadoraCampana_campana {
+            align-self: flex-end;
+            margin-top: auto;
+        }
+
+        .gusano1>img {
+            width: 100%;
+        }
+
+        .gusano2>img {
+            width: 50%;
+        }
+
+        .campana>img {
+            width: 50%;
+        }
+
+        .tostadora3>img {
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sitio Web de Homero</h1>
+    <div class="container">
+        <div class="relojGusano">
+            <img class="relojGusano_reloj" src="./imagenes/reloj.gif" alt="reloj">
+            <img class="relojGusano_gusano" src="./imagenes/gusano.gif" alt="gusano">
+        </div>
+        <div class="tostadora1">
+            <img src="./imagenes/tostadora.gif" alt="tostadora">
+        </div>
+        <div class="jesus">
+            <img src="./imagenes/jesus.gif" alt="jesus">
+        </div>
+        <div class="tostadoraCampana">
+            <img class="tostadoraCampana_tostadora" src="./imagenes/tostadora.gif" alt="tostadora">
+            <img class="tostadoraCampana_campana" src="./imagenes/campana.gif" alt="campana">
+        </div>
+        <div class="boca">
+            <img src="./imagenes/boca.gif" alt="boca">
+        </div>
+        <div class="reloj">
+            <img src="./imagenes/reloj.gif" alt="reloj">
+        </div>
+        <div class="gusano1">
+            <img src="./imagenes/gusano.gif" alt="gusano">
+        </div>
+        <div class="gusano2">
+            <img src="./imagenes/gusano.gif" alt="gusano">
+        </div>
+        <div class="gusano3">
+            <img src="./imagenes/gusano.gif" alt="gusano">
+        </div>
+        <div class="tostadora2">
+            <img src="./imagenes/tostadora.gif" alt="tostadora">
+        </div>
+        <div class="campana">
+            <img src="./imagenes/campana.gif" alt="campana">
+        </div>
+        <div class="boca2">
+            <img src="./imagenes/boca.gif" alt="boca">
+        </div>
+        <div class="tostadora3">
+            <img src="./imagenes/tostadora.gif" alt="tostadora">
+        </div>
+        <div class="reloj2">
+            <img src="./imagenes/reloj.gif" alt="reloj">
+        </div>
+    </div>
+</body>
+
+</html>
